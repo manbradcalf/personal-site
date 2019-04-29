@@ -30,6 +30,7 @@ section {
 h1 {
   font-size: 2em;
   margin: .67em 0;
+  font-family: monospace;
 }
 
 /* Grouping content ========================================================================== */
@@ -2022,6 +2023,11 @@ video.video-responsive::before {
   -ms-flex: 1 0 0;
   flex: 1 0 0; 
   -ms-flex-align: center;
+  font-family: monospace;
+}
+
+.navbar-item {
+  font-family: monospace;
 }
 
 .navbar .navbar-section:not(:first-child):last-child {
