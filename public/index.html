@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" type="text/css" href="spectre.css">
+  <link rel="stylesheet" type="text/css" href="ca.css">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ben Medcalf</title>
+
+    <!-- FAVICON --> 
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
+
+
+  </head>
+  <body>
+    <div class="main">
+      <h1>Ben Medcalf</h1>
+      <div class="navbar-center navbar-section">
+        <a href="http://github.com/manbradcalf" class="p-2 navbar-item">Github</a>
+        <a href="https://www.linkedin.com/in/ben-medcalf/" class="p-2 navbar-item">LinkedIn</a>
+        <a href="http://instagram.com/manbradcalf" class="p-2 navbar-item">Instagram</a>
+        <a href="javascript:" id="bands-link" class="p-2 navbar-item">Bands</a>
+        <ul id="bands-list" style="display: none">
+          <li><a href="http://buddylist.bandcamp.com" class="navbar-item">Buddy List</a></li>
+          <li><a href="https://youngscum.bandcamp.com" class="navbar-item">Young Scum</a></li>
+        </ul>
+        <a href="mailto:ben.medcalf@gmail.com" class="navbar-item">Contact</a>
+      </div>
+      <img src="images/prof_pic.png" alt="Picture of Ben" class="img-responsive" width="650px" />
+    </div>
+    
+  </body>
+  <script>
+  var bands_link = document.getElementById('bands-link'),
+  bands_list = document.getElementById('bands-list');
+  bands_link.onclick = function() {
+  if (bands_list.style.display == 'none') {
+  bands_list.style.display = 'block';
+  } else {
+  bands_list.style.display = 'none';
+  }
+  }
+  </script>
+</html>
